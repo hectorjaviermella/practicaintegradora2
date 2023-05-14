@@ -1,0 +1,21 @@
+
+<div class="row">
+  <div class="col-sm-6">
+    <h5 class="card-title">Carrito nro: {{cart._id}}</h5>
+    {{#each cart.products}}
+      <div class="card" style="width: 18rem;">
+        <!--img src="{{this.pThumbnails.[0]}}" class="card-img-top" alt="..." /-->
+        <div class="card-body">
+          <h5 class="card-title">Articulo: {{this.pId.pTitle}}</h5>
+          <p class="card-text">Description: {{this.pId.pDescription}}</p>
+          <p class="card-text">Idprod: {{this.pId._id}}</p>
+          <p class="card-text">Cantidad: {{this.quantity}}</p>
+               
+        
+        </div>
+      </div>
+    {{/each}}
+        
+  </div>
+ 
+</div>
